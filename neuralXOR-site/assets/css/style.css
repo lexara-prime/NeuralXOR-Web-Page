@@ -25,7 +25,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 html {
@@ -59,6 +59,18 @@ body {
     background: var(--night-3);
     height: 100vh;
 }
+
+.pulse-icon {
+    position: absolute;
+    font-size: 56rem;
+    top: 90px;
+    bottom: 50px;
+    left: 0;
+    color: var(--french-rose);
+    z-index: -1;
+    opacity: .1;
+}
+
 
 .header {
     display: flex;
@@ -103,21 +115,43 @@ body {
     padding-left: .2rem;
 }
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .hero-content {
     color: var(--french-rose);
-    font-family: 'Caveat', cursive;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 4rem;
     text-align: center;
     margin-top: 10%;
+    background: rgb(236, 197, 207);
+    background: -moz-linear-gradient(90deg, rgba(236, 197, 207, 0.15309873949579833) 0%, rgba(255, 204, 216, 0.12228641456582634) 50%, rgba(255, 0, 67, 0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(236, 197, 207, 0.15309873949579833) 0%, rgba(255, 204, 216, 0.12228641456582634) 50%, rgba(255, 0, 67, 0) 100%);
+    background: linear-gradient(90deg, rgba(236, 197, 207, 0.15309873949579833) 0%, rgba(255, 204, 216, 0.12228641456582634) 50%, rgba(255, 0, 67, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecc5cf", endColorstr="#ff0043", GradientType=1);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 350px 0px 0px 64px;
+}
+
+.hero-content .welcome-title {
+    font-family: 'Caveat', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8rem;
+    margin-bottom: 1rem;
 }
 
 .hero-content .project-description {
+    font-family: 'Caveat', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.7rem;
+    font-weight: 700;
+    line-height: 1.6rem;
     max-width: 1000px;
     margin: auto;
+    padding-bottom: 4rem;
+    text-align: left;
 }
 
 .hero-content .project-description strong {
@@ -126,6 +160,7 @@ body {
     background: var(--french-rose);
     color: var(--night-3);
     border: 1.1px solid var(--french-rose);
-    border-radius: 1px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-level-3);
     padding: 3px;
 }
