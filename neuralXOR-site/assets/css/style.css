@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --eggplant: #6C596Cff;
+    --eggplant-2: #613249ff;
+    --lilac: #C7A2C9ff;
+    --night: #111111ff;
+    --night-2: #141112ff;
+    --dark-purple: #412533ff;
+    --night-3: #121111ff;
+    --french-rose: #EA4087ff;
+
+    /* Shadows */
+    --shadow-level-1: 0 1rem 1rem 0 rgba(0, 0, 0, .2);
+    --shadow-level-2: 0 1rem 1rem 0 rgba(0, 0, 0, .2);
+    --shadow-level-3: 0 2rem 2rem 0 rgba(0, 0, 0, .1);
+    --shadow-level-4: 0 3rem 3rem 0 rgba(0, 0, 0, .1);
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--french-rose);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--night-3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--night-2);
+}
+
+body {
+    background: var(--night-3);
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Caveat', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header .logo {
+    width: 15%;
+    border-bottom: 2px solid var(--french-rose);
+    border-right: 2px solid var(--french-rose);
+    border-radius: 0px 0px 21px 0px;
+    padding: 1rem;
+    box-shadow: none;
+    opacity: .7;
+    cursor: pointer;
+    transition: .4s all ease;
+}
+
+.header .logo:hover {
+    opacity: 1;
+    box-shadow: var(--shadow-level-3);
+}
+
+.info-links {
+    padding: 2rem;
+}
+
+.info-links .external-link-icon {
+    border-bottom: 4px solid var(--french-rose);
+    color: var(--french-rose);
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s all ease;
+}
+
+.info-links .external-link-icon:hover {
+    opacity: 1;
+    padding-left: .2rem;
+}
+
+.hero-content {
+    color: var(--french-rose);
+    font-family: 'Caveat', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.hero-content .project-description {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero-content .project-description strong {
+    font-weight: 800;
+    font-size: 1.4rem;
+    background: var(--french-rose);
+    color: var(--night-3);
+    border: 1.1px solid var(--french-rose);
+    border-radius: 1px;
+    padding: 3px;
+}
